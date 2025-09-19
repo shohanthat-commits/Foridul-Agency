@@ -51,6 +51,8 @@
                         <p class="text-xs text-slate-500">আপনার ডিজিটাল সহযোগী</p>
                     </div>
                 </a>
+
+                <!-- Desktop Navigation -->
                 <nav class="hidden md:flex items-center space-x-8">
                     <a href="#home" class="nav-trigger nav-link text-slate-600 hover:text-indigo-600 transition-colors">হোম</a>
                     <a href="#about" class="nav-trigger nav-link text-slate-600 hover:text-indigo-600 transition-colors">আমাদের সম্পর্কে</a>
@@ -59,11 +61,15 @@
                     <a href="#shop" class="nav-trigger nav-link text-slate-600 hover:text-indigo-600 transition-colors">শপ</a>
                     <a href="#contact" class="nav-trigger bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-5 py-2 rounded-md transition-colors">যোগাযোগ</a>
                 </nav>
+
+                <!-- Mobile Menu Button -->
                 <button id="mobile-menu-button" class="md:hidden">
                     <i data-lucide="menu" class="w-6 h-6 text-slate-700"></i>
                 </button>
             </div>
         </div>
+
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden bg-white border-t border-slate-200">
             <a href="#home" class="nav-trigger block py-3 px-6 text-slate-600 hover:bg-slate-50 hover:text-indigo-600">হোম</a>
             <a href="#about" class="nav-trigger block py-3 px-6 text-slate-600 hover:bg-slate-50 hover:text-indigo-600">আমাদের সম্পর্কে</a>
@@ -75,33 +81,254 @@
     </header>
 
     <main class="pt-20">
-        <!-- Main content pages will be here -->
-        <section id="page-home" class="page"><!-- Home Page Content --></section>
-        <section id="page-about" class="page"><!-- About Page Content --></section>
-        <section id="page-services" class="page"><!-- Services Page Content --></section>
-        <section id="page-portfolio" class="page"><!-- Portfolio Page Content --></section>
-        <section id="page-shop" class="page"><!-- Shop Page Content --></section>
-        <section id="page-contact" class="page">
-            <div class="container mx-auto px-6 py-24">
+        <!-- Home Page -->
+        <section id="page-home" class="page">
+            <div class="bg-gray-900 text-white">
+                <div class="container mx-auto px-6 py-24 md:py-36 text-center">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 tracking-tight">আধুনিক ব্যবসার জন্য উদ্ভাবনী ডিজিটাল সমাধান</h1>
+                    <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-8">আমরা একটি ডিজিটাল এজেন্সি যা সফটওয়্যার ডেভেলপমেন্ট, আইটি কৌশল এবং শক্তিশালী অনলাইন ব্র্যান্ড তৈরিতে বিশেষজ্ঞ।</p>
+                    <a href="#shop" class="nav-trigger bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 inline-block transform hover:scale-105 shadow-lg shadow-indigo-500/30">আমাদের পরিষেবাগুলি দেখুন</a>
+                </div>
+            </div>
+            
+            <div class="py-20">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-3">আমরা যা করি</h2>
+                    <p class="text-slate-600 max-w-2xl mx-auto mb-12">আমরা আপনার ব্যবসাকে পরবর্তী স্তরে নিয়ে যাওয়ার জন্য ডিজাইন করা বিস্তৃত ডিজিটাল পরিষেবা সরবরাহ করি।</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                            <i data-lucide="code" class="w-12 h-12 text-indigo-600 mx-auto mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">ওয়েব ও সফটওয়্যার</h3>
+                            <p class="text-slate-600">আপনার প্রয়োজন অনুযায়ী কাস্টম ওয়েবসাইট এবং শক্তিশালী সফটওয়্যার অ্যাপ্লিকেশন তৈরি করি।</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                            <i data-lucide="shield-check" class="w-12 h-12 text-indigo-600 mx-auto mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">আইটি সাপোর্ট ও নিরাপত্তা</h3>
+                            <p class="text-slate-600">আপনার সিস্টেমকে সুরক্ষিত এবং কার্যকর রাখতে ২৪/৭ আইটি সহায়তা এবং সাইবার নিরাপত্তা পরিষেবা।</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                            <i data-lucide="megaphone" class="w-12 h-12 text-indigo-600 mx-auto mb-4"></i>
+                            <h3 class="text-xl font-bold mb-2">ডিজিটাল মার্কেটিং</h3>
+                            <p class="text-slate-600">এসইও, সোশ্যাল মিডিয়া মার্কেটিং এবং অনলাইন বিজ্ঞাপনের মাধ্যমে আপনার ব্র্যান্ডের প্রচার করি।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="page-about" class="page py-24">
+             <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-16">
+                    <div class="md:w-1/2">
+                        <div class="relative">
+                           <img src="https://placehold.co/600x450/e2e8f0/334155?text=আমাদের+টিম" alt="আমাদের টিম" class="rounded-lg shadow-2xl w-full z-10 relative">
+                           <div class="absolute -bottom-4 -right-4 w-full h-full bg-indigo-100 rounded-lg transform rotate-[-3deg]"></div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <span class="text-indigo-600 font-semibold tracking-wider">আমাদের সম্পর্কে</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mt-2 mb-6">আবেগ দ্বারা চালিত, দক্ষতা দ্বারা সমর্থিত</h2>
+                        <p class="text-slate-600 mb-4">
+                           <strong>ফরিদুল এজেন্সি</strong>-তে স্বাগতম। আমরা একটি সৃজনশীল এবং প্রযুক্তি-চালিত ডিজিটাল এজেন্সি যা ব্যবসাকে শক্তিশালী করার লক্ষ্যে প্রতিষ্ঠিত। আমাদের লক্ষ্য হলো রূপান্তরকারী প্রযুক্তির মাধ্যমে গ্রাহকদের সাফল্য নিশ্চিত করা।
+                        </p>
+                        <p class="text-slate-600 mb-6">
+                            আমরা গুণমান এবং স্বচ্ছতার প্রতিশ্রুতি নিয়ে কাজ করি। সফটওয়্যার ডেভেলপমেন্ট, আইটি পরামর্শ এবং ডিজিটাল মার্কেটিং ক্ষেত্রে আমাদের বিভিন্ন দক্ষতা আমাদেরকে সামগ্রিক সমাধান সরবরাহ করতে সক্ষম করে যা সাফল্যকে চালিত করে।
+                        </p>
+                        <div class="border-l-4 border-indigo-500 pl-6 py-2">
+                            <p class="italic text-slate-600 text-lg">"আমাদের দর্শন সহজ: আমাদের গ্রাহকদের জন্য মান তৈরি করা। আমরা সৃজনশীল চিন্তাভাবনাকে প্রযুক্তিগত শ্রেষ্ঠত্বের সাথে একত্রিত করে এমন সমাধান তৈরি করি যা কেবল উদ্ভাবনী নয়, প্রভাবশালীও।"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Founder Section -->
+            <div class="container mx-auto px-6 mt-20 text-center">
+                 <h3 class="text-2xl md:text-3xl font-bold text-slate-800">আমাদের প্রতিষ্ঠাতার সাথে পরিচিত হোন</h3>
+                 <div class="mt-8 flex flex-col items-center">
+                    <img src="https://placehold.co/150x150/e2e8f0/334155?text=ফরিদুল+ইসলাম" alt="ফরিদুল ইসলাম" class="w-32 h-32 rounded-full shadow-xl object-cover">
+                    <h4 class="text-xl font-bold text-slate-700 mt-4">ফরিদুল ইসলাম</h4>
+                    <p class="text-indigo-600 font-semibold">প্রতিষ্ঠাতা ও প্রধান নির্বাহী</p>
+                    <p class="mt-4 text-slate-600 max-w-2xl mx-auto">
+                        "প্রযুক্তির প্রতি আমার গভীর আবেগ এবং ব্যবসাকে ডিজিটালভাবে রূপান্তরিত করার আকাঙ্ক্ষা থেকেই 'ফরিদুল এজেন্সি'-এর জন্ম। আমাদের লক্ষ্য হলো প্রতিটি ক্লায়েন্টের জন্য এমন সমাধান তৈরি করা যা কেবল কার্যকরই নয়, বরং তাদের ব্যবসাকে নতুন উচ্চতায় নিয়ে যেতে পারে।"
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Page -->
+        <section id="page-services" class="page py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <span class="text-indigo-600 font-semibold tracking-wider">আমাদের পরিষেবা</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mt-2">আপনার ব্যবসার জন্য সম্পূর্ণ সমাধান</h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Item -->
+                    <div class="border border-slate-200 rounded-lg p-6 flex flex-col items-start hover:shadow-xl hover:border-indigo-500 transition-all duration-300">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mb-4">
+                            <i data-lucide="monitor-smartphone" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">ওয়েব ও সফটওয়্যার ডেভেলপমেন্ট</h3>
+                        <p class="text-slate-600 mb-4 flex-grow">আমরা আধুনিক প্রযুক্তি ব্যবহার করে রেসপন্সিভ ওয়েবসাইট, ওয়েব অ্যাপ্লিকেশন এবং কাস্টম সফটওয়্যার তৈরি করি যা আপনার ব্যবসাকে এগিয়ে নিয়ে যায়।</p>
+                        <a href="#shop" class="nav-trigger text-indigo-600 font-semibold hover:text-indigo-800">আরও জানুন <span class="ml-1">&rarr;</span></a>
+                    </div>
+                    <!-- Service Item -->
+                    <div class="border border-slate-200 rounded-lg p-6 flex flex-col items-start hover:shadow-xl hover:border-indigo-500 transition-all duration-300">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mb-4">
+                            <i data-lucide="shopping-cart" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">ই-কমার্স সমাধান</h3>
+                        <p class="text-slate-600 mb-4 flex-grow">আমরা সম্পূর্ণ ই-কমার্স প্ল্যাটফর্ম তৈরি করি, যেখানে পেমেন্ট গেটওয়ে, ইনভেন্টরি ম্যানেজমেন্ট এবং ব্যবহারকারী-বান্ধব শপিং কার্ট অন্তর্ভুক্ত থাকে।</p>
+                        <a href="#shop" class="nav-trigger text-indigo-600 font-semibold hover:text-indigo-800">আরও জানুন <span class="ml-1">&rarr;</span></a>
+                    </div>
+                    <!-- Service Item -->
+                    <div class="border border-slate-200 rounded-lg p-6 flex flex-col items-start hover:shadow-xl hover:border-indigo-500 transition-all duration-300">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mb-4">
+                            <i data-lucide="cloud" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">ক্লাউড এবং আইটি সাপোর্ট</h3>
+                        <p class="text-slate-600 mb-4 flex-grow">আমাদের আইটি বিশেষজ্ঞরা আপনার ব্যবসাকে সার্বক্ষণিক সাপোর্ট এবং ক্লাউড সমাধান প্রদান করে, যা আপনার সিস্টেমকে সুরক্ষিত ও সচল রাখে।</p>
+                        <a href="#shop" class="nav-trigger text-indigo-600 font-semibold hover:text-indigo-800">আরও জানুন <span class="ml-1">&rarr;</span></a>
+                    </div>
+                    <!-- Service Item -->
+                    <div class="border border-slate-200 rounded-lg p-6 flex flex-col items-start hover:shadow-xl hover:border-indigo-500 transition-all duration-300">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mb-4">
+                            <i data-lucide="line-chart" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">ডিজিটাল মার্কেটিং এবং এসইও</h3>
+                        <p class="text-slate-600 mb-4 flex-grow">সার্চ ইঞ্জিন অপটিমাইজেশন (এসইও), সোশ্যাল মিডিয়া মার্কেটিং এবং অনলাইন বিজ্ঞাপনের মাধ্যমে আমরা আপনার ব্র্যান্ডকে সঠিক দর্শকের কাছে পৌঁছে দিই।</p>
+                        <a href="#shop" class="nav-trigger text-indigo-600 font-semibold hover:text-indigo-800">আরও জানুন <span class="ml-1">&rarr;</span></a>
+                    </div>
+                     <!-- Service Item -->
+                    <div class="border border-slate-200 rounded-lg p-6 flex flex-col items-start hover:shadow-xl hover:border-indigo-500 transition-all duration-300">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mb-4">
+                            <i data-lucide="figma" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">UI/UX ডিজাইন</h3>
+                        <p class="text-slate-600 mb-4 flex-grow">আমরা ব্যবহারকারীর অভিজ্ঞতাকে অগ্রাধিকার দিয়ে সুন্দর এবং কার্যকরী ডিজাইন তৈরি করি যা আপনার গ্রাহকদের মুগ্ধ করবে।</p>
+                        <a href="#shop" class="nav-trigger text-indigo-600 font-semibold hover:text-indigo-800">আরও জানুন <span class="ml-1">&rarr;</span></a>
+                    </div>
+                     <!-- Service Item -->
+                    <div class="border border-slate-200 rounded-lg p-6 flex flex-col items-start hover:shadow-xl hover:border-indigo-500 transition-all duration-300">
+                        <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full mb-4">
+                            <i data-lucide="shield-half" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800 mb-2">সাইবার নিরাপত্তা</h3>
+                        <p class="text-slate-600 mb-4 flex-grow">আপনার ডিজিটাল সম্পদকে সুরক্ষিত রাখতে আমরা শক্তিশালী সাইবার নিরাপত্তা সমাধান এবং পরামর্শ প্রদান করি।</p>
+                        <a href="#shop" class="nav-trigger text-indigo-600 font-semibold hover:text-indigo-800">আরও জানুন <span class="ml-1">&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Page -->
+        <section id="page-portfolio" class="page py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <span class="text-indigo-600 font-semibold tracking-wider">আমাদের কাজ</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mt-2">আমাদের কিছু সফল প্রকল্প</h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Portfolio Item -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://placehold.co/600x400/e2e8f0/334155?text=প্রকল্প+১" alt="প্রকল্প ১" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">কর্পোরেট ওয়েবসাইট ডিজাইন</h3>
+                            <p class="text-slate-600">একটি শীর্ষস্থানীয় পরামর্শক সংস্থার জন্য আধুনিক এবং প্রতিক্রিয়াশীল ওয়েবসাইট তৈরি করা হয়েছে।</p>
+                        </div>
+                    </div>
+                     <!-- Portfolio Item -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://placehold.co/600x400/e2e8f0/334155?text=প্রকল্প+২" alt="প্রকল্প ২" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">ই-কমার্স প্ল্যাটফর্ম</h3>
+                            <p class="text-slate-600">ফ্যাশন ব্র্যান্ডের জন্য একটি সম্পূর্ণ বৈশিষ্ট্যযুক্ত অনলাইন স্টোর তৈরি করা হয়েছে।</p>
+                        </div>
+                    </div>
+                     <!-- Portfolio Item -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                        <img src="https://placehold.co/600x400/e2e8f0/334155?text=প্রকল্প+৩" alt="প্রকল্প ৩" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">মোবাইল অ্যাপ্লিকেশন</h3>
+                            <p class="text-slate-600">স্বাস্থ্যসেবা প্রদানকারীদের জন্য একটি ক্রস-প্ল্যাটফর্ম মোবাইল অ্যাপ তৈরি করা হয়েছে।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Page -->
+        <section id="page-shop" class="page py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <span class="text-indigo-600 font-semibold tracking-wider">আমাদের পণ্য</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mt-2">আপনার প্রয়োজন অনুযায়ী পরিষেবা প্যাকেজ</h2>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product Card -->
+                    <div class="border border-slate-200 rounded-lg p-6 text-center flex flex-col">
+                        <h3 class="text-2xl font-bold text-slate-800">বেসিক ওয়েবসাইট</h3>
+                        <p class="text-slate-500 mt-1 mb-4">ছোট ব্যবসার জন্য</p>
+                        <p class="text-4xl font-bold text-indigo-600 mb-4">৳১০,০০০</p>
+                        <ul class="text-slate-600 space-y-2 mb-6 flex-grow">
+                            <li><i data-lucide="check" class="inline-block w-4 h-4 text-green-500 mr-2"></i>৫টি পৃষ্ঠা</li>
+                            <li><i data-lucide="check" class="inline-block w-4 h-4 text-green-500 mr-2"></i>রেসপন্সিভ ডিজাইন</li>
+                            <li><i data-lucide="check" class="inline-block w-4 h-4 text-green-500 mr-2"></i>১ বছরের সাপোর্ট</li>
+                        </ul>
+                        <a href="#contact" class="nav-trigger mt-auto bg-indigo-100 text-indigo-700 hover:bg-indigo-200 font-semibold py-3 px-6 rounded-lg transition-colors w-full">অর্ডার করুন</a>
+                    </div>
+                    <!-- Product Card -->
+                     <div class="border-2 border-indigo-600 rounded-lg p-6 text-center flex flex-col relative shadow-2xl">
+                        <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">জনপ্রিয়</span>
+                        <h3 class="text-2xl font-bold text-slate-800">প্রফেশনাল প্যাকেজ</h3>
+                        <p class="text-slate-500 mt-1 mb-4">মাঝারি ব্যবসার জন্য</p>
+                        <p class="text-4xl font-bold text-indigo-600 mb-4">৳২৫,০০০</p>
+                        <ul class="text-slate-600 space-y-2 mb-6 flex-grow">
+                            <li><i data-lucide="check" class="inline-block w-4 h-4 text-green-500 mr-2"></i>১০টি পৃষ্ঠা</li>
+                            <li><i data-lucide="check" class="inline-block w-4 h-4 text-green-500 mr-2"></i>কন্টেন্ট ম্যানেজমেন্ট সিস্টেম</li>
+                            <li><i data-lucide="check" class="inline-block w-4 h-4 text-green-500 mr-2"></i>বেসিক এসইও</li>
+                        </ul>
+                        <a href="#contact" class="nav-trigger mt-auto bg-indigo-600 text-white hover:bg-indigo-700 font-semibold py-3 px-6 rounded-lg transition-colors w-full">অর্ডার করুন</a>
+                    </div>
+                    <!-- Product Card -->
+                    <div class="border border-slate-200 rounded-lg p-6 text-center flex flex-col">
+                        <h3 class="text-2xl font-bold text-slate-800">এন্টারপ্রাইজ সমাধান</h3>
+                        <p class="text-slate-500 mt-1 mb-4">বড় প্রতিষ্ঠানের জন্য</p>
+                        <p class="text-4xl font-bold text-indigo-600 mb-4">আলোচনা সাপেক্ষে</p>
+                        <ul class="text-slate-600 space-y-2 mb-6 flex-grow">
+                             <li><i data-lucide="check" class="inline-block w-4 h-4 text-green-500 mr-2"></i>আনলিমিটেড পৃষ্ঠা</li>
+                            <li><i data-lucide="check" class="inline-block w-4 h-4 text-green-500 mr-2"></i>সম্পূর্ণ কাস্টমাইজেশন</li>
+                            <li><i data-lucide="check" class="inline-block w-4 h-4 text-green-500 mr-2"></i> выделенный সাপোর্ট</li>
+                        </ul>
+                        <a href="#contact" class="nav-trigger mt-auto bg-indigo-100 text-indigo-700 hover:bg-indigo-200 font-semibold py-3 px-6 rounded-lg transition-colors w-full">আলোচনা করুন</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="page-contact" class="page py-24">
+            <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <span class="text-indigo-600 font-semibold tracking-wider">যোগাযোগ করুন</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mt-2">আপনার প্রকল্প নিয়ে আলোচনা করতে প্রস্তুত?</h2>
                 </div>
                 <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
-                    <form name="contact" method="POST" data-netlify="true">
-                        <input type="hidden" name="form-name" value="contact" />
+                    <form>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                            <input type="text" name="name" placeholder="আপনার নাম" class="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none" required>
-                            <input type="email" name="email" placeholder="আপনার ইমেইল" class="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none" required>
+                            <input type="text" placeholder="আপনার নাম" class="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none">
+                            <input type="email" placeholder="আপনার ইমেইল" class="w-full p-3 border border-slate-300 rounded-md focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none">
                         </div>
-                        <textarea name="message" placeholder="আপনার বার্তা" rows="5" class="w-full p-3 border border-slate-300 rounded-md mb-6 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none" required></textarea>
+                        <textarea placeholder="আপনার বার্তা" rows="5" class="w-full p-3 border border-slate-300 rounded-md mb-6 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none"></textarea>
                         <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-md transition-colors">বার্তা পাঠান</button>
                     </form>
                 </div>
             </div>
         </section>
+
     </main>
-    
+
+    <!-- Footer -->
     <footer class="bg-gray-900 border-t border-gray-800 text-slate-400">
         <div class="container mx-auto px-6 py-8">
             <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
@@ -118,7 +345,6 @@
     <script>
         lucide.createIcons();
 
-        // This script ensures the correct page is shown on load and on navigation
         document.addEventListener('DOMContentLoaded', () => {
             const navTriggers = document.querySelectorAll('.nav-trigger');
             const navLinks = document.querySelectorAll('.nav-link');
@@ -127,53 +353,74 @@
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
 
+            // Set current year in footer
             if (yearSpan) {
                 yearSpan.textContent = new Date().getFullYear();
             }
 
+            // Function to switch pages and update nav link styles
             const showPage = (pageId) => {
-                pages.forEach(page => page.classList.remove('active'));
+                // Hide all pages
+                pages.forEach(page => {
+                    page.classList.remove('active');
+                });
                 
+                // Show the target page
                 const targetPage = document.getElementById(pageId);
                 if (targetPage) {
                     targetPage.classList.add('active');
                 }
 
+                // Update active state in navigation links
                 const targetNavId = pageId.replace('page-', '');
                 navLinks.forEach(link => {
-                    link.classList.toggle('active', link.getAttribute('href') === `#${targetNavId}`);
+                    if (link.getAttribute('href') === `#${targetNavId}`) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
                 });
 
+                // Close mobile menu after navigation
                 if (mobileMenu.classList.contains('active')) {
                     mobileMenu.classList.remove('active');
                 }
-                window.scrollTo(0, 0);
+                window.scrollTo(0, 0); // Scroll to top on page change
             };
 
+            // Handle navigation clicks
             navTriggers.forEach(trigger => {
                 trigger.addEventListener('click', (e) => {
                     e.preventDefault();
                     const targetId = trigger.getAttribute('href').substring(1);
                     const targetPageId = `page-${targetId}`;
                     showPage(targetPageId);
+                    // Update URL hash for better history/linking
                     history.pushState(null, null, `#${targetId}`);
                 });
             });
 
-            // CRITICAL FIX: This function runs on page load to show the correct content
+            // Show initial page based on URL hash or default to home
             const handleInitialLoad = () => {
                 const hash = window.location.hash.substring(1);
                 let initialPage = 'home';
-                if (hash && document.getElementById(`page-${hash}`)) {
-                    initialPage = hash;
+                if (hash) {
+                    const potentialPage = document.getElementById(`page-${hash}`);
+                    if (potentialPage) {
+                        initialPage = hash;
+                    }
                 }
                 showPage(`page-${initialPage}`);
             };
 
-            handleInitialLoad(); // <-- This is the line that fixes the blank page issue.
+            handleInitialLoad();
 
-            window.onpopstate = handleInitialLoad;
+            // Handle browser back/forward buttons
+            window.onpopstate = () => {
+                handleInitialLoad();
+            };
 
+            // Mobile menu toggle
             mobileMenuButton.addEventListener('click', () => {
                 mobileMenu.classList.toggle('active');
             });
